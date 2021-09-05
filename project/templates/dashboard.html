@@ -1,0 +1,21 @@
+<html>
+    <body>
+        Last watched video: <b>Relations & Functions L-1 | Relations | Class 11 | JEE Maths | JEE/CBSE 2021 | Vedantu</b>
+        <form action='/watch_video' method='POST'>
+            <input type="hidden" name="video_id" value="52TLszIQGcU">
+            <br>
+            <button type="submit">Watch This Video</button>
+        </form>
+        <a href="google.com">My Calendar</a>
+        <hr>
+        <h1>Suggested order of completion: </h1>
+        <hr>
+        {% for topic in topics %}
+            <h3>{{topic.name}}</h3>
+            <form action='/search_videos' method="POST"><input type='hidden' value='{{ topic.name }}' name='topic_name'>
+                <button type='submit'>Watch</button>
+            </form>
+            <hr>
+        {% endfor %}
+    </body>
+</html>

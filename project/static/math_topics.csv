@@ -1,0 +1,30 @@
+0,sets,1,1,NULL
+1,relations and functions,1,1,0
+2,trignometric functions,2,3,"0,1"
+3,principle of matheatical induction,1,1,8
+4,complex number and quadratic equations,4,5,NULL
+5,linear inequalities,2,2,NULL
+6,permutation and combination,4,4,NULL
+7,binomial theorem,4,4,6
+8,sequence and series,4,3,NULL
+9,straight lines,4,4,NULL
+10,circles,4,5,9
+11,conic sections,3,5,"9,10"
+12,intro to 3d geometry,2,1,NULL
+13,mathematical reasoning,3,1,NULL
+14,statistics,3,5,NULL
+15,relations and functions class 12,2,1,"0,1"
+16,inverse trignometric functions,2,2,"0,1,2,15"
+17,matrices,5,3,4
+18,determinants,4,4,17
+19,limits,3,4,2
+20,continuity and differentiability,3,3,19
+21,application of derivatives,4,3,"19,20"
+22,integrals,5,5,"19,20,21"
+23,definite integrals,5,4,22
+24,application of integrals,5,4,23
+25,differential equations,5,4,"22,23"
+26,vector algebra,4,2,12
+27,three dimensional geometry,5,2,26
+28,linear programing,1,1,NULL
+29,probability,4,5,6

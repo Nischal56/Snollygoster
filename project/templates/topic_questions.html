@@ -1,0 +1,11 @@
+<html>
+    <body>
+        <h3>Enter your ease in different topics (1 being easy to 5 being hardest)</h3>
+        <form action='/personalise' method="POST">
+        {% for topic in math_topics%}
+            <p>{{topic.name}} : <input type="number" name="math_{{topic.id}}" value="3"> </p>
+        {% endfor %}
+        <button type="submit">Submit</button>
+        </form>
+    </body>
+</html>
