@@ -73,7 +73,7 @@ def home():
 
 
     return render_template('home.html')
-
+    
 @app.route('/comfort', methods=["GET", "POST"])
 def comfort():
     return render_template('comfort.html')

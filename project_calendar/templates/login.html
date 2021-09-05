@@ -1,0 +1,53 @@
+<html lang="en">
+  <head>
+      <title> Log in </title>
+    <meta name="google-signin-scope" content="profile email">
+    <meta name="google-signin-client_id" content="431634645731-29anaa5393mbq42cinfmah258n14evvg.apps.googleusercontent.com">
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
+  </head>
+  <body>
+      <h1> Log in to your Google Account </h1>
+      <form action="/login" method="POST" id="login_form">
+        <input type="hidden" name="username" id="username_id" value="">
+        <input type="hidden" name="full_name" id="full_name_id" value="">
+      </form>
+    <div class="g-signin2" data-onsuccess="onSignIn" data-theme="dark"></div>
+    <div id = 'content'></div>
+    <br>
+    <br>
+    <button class="button1" onclick="signOut()">Sign Out</button>
+    <script>
+      function onSignIn(googleUser) {
+        // Useful data for your client-side scripts:
+        var profile = googleUser.getBasicProfile();
+        // console.log("ID: " + profile.getId()); // Don't send this directly to your server!
+        // console.log('Full Name: ' + profile.getName());
+        // console.log('Given Name: ' + profile.getGivenName());
+        // console.log('Family Name: ' + profile.getFamilyName());
+        // console.log("Image URL: " + profile.getImageUrl());
+        // console.log("Email: " + profile.getEmail());
+        console.log("User is : " + JSON.stringify(profile));
+
+        document.getElementById("username_id").value = profile.getEmail() ;
+        document.getElementById("full_name_id").value = profile.getName() ;
+        document.getElementById("login_form").submit();
+
+        var element = document.querySelector('#content')
+        element.innerText = profile.getName()
+        var image = document.createElement('img')
+        image.setAttribute('src', profile.getImageUrl())
+
+
+        // The ID token you need to pass to your backend:
+        var id_token = googleUser.getAuthResponse().id_token;
+        console.log("ID Token: " + id_token);
+      }
+
+      function signOut() {
+          gapi.auth2.getAuthInstance().signOut().then(function() {
+              console.log("User signed")
+          })
+      }
+    </script>
+  </body>
+</html>
