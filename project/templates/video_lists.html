@@ -1,0 +1,12 @@
+<html>
+    <body>
+        <h1>Videos: (for your current completion level)</h1>
+        {% for v in vid_ids %}
+            <form action='/watch_video' method='POST'>
+                <h3>{{ v[1] }}</h3>
+                <input type="hidden" name="video_id" value="{{v[0]}}">
+                <button type="submit">Watch This Video</button>
+            </form>
+        {% endfor %}
+    </body>
+</html>
