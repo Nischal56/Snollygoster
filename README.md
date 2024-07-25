@@ -1,12 +1,11 @@
-# Snollygoster
-Blue Learn Hackathon - Team Snollygoster
+# Student Study Planner
 
 ## Installation
 - Python 3 needs to be installed
 
 Use the following commands :
 ```
-git clone https://github.com/nischalkashyap56/Snollygoster.git
+git clone https://github.com/nischalkashyap56/Study-Planner-App.git
 pip install flask, flask_sqlalchemy, flask_login
 run create_db.py
 export FLASK_APP='project'
