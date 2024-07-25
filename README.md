@@ -1,25 +1,30 @@
 # Snollygoster
 Blue Learn Hackathon - Team Snollygoster
 
-PROJECT DESCRIPTION:
-The biggest edtech platform in the world and especially for rual areas is YouTube.
-Unfortunately YouTube is not built for education and edtech platforms such as Unacademy and Byjus may not be financially feasible for some.
-Our project optimises YouTube for education and gives a personalised roadmap for the student while removing any distraction that YouTube entices students with.
+## Installation
+- Python 3 needs to be installed
 
-TECHNOLIGIES USED:
-Flask, SQLAlchemy, Google Calendar API, Youtube API
-
-INSTALLATION: 
-Python 3 needs to be installed
-Clone the git repo
+Use the following commands :
+```
+git clone https://github.com/nischalkashyap56/Snollygoster.git
 pip install flask, flask_sqlalchemy, flask_login
 run create_db.py
 export FLASK_APP='project'
 flask run
-
-In another terminal open project_calendar
+```
+- In another terminal open project_calendar
+```
 python calendarapp.py
+```
 
-VIDEO LINK: https://drive.google.com/drive/folders/17CfqmSpH9aKEqOmt2uibNlmvqp06vInH?usp=sharing
+## Project Description
 
-SCREENSHOTS LINK: https://drive.google.com/drive/folders/1bA_3KhZ4t0zi5oqTPbwo-eKwS2XIHCaR?usp=sharing
+The biggest edtech platform in the world and especially for rual areas is YouTube.
+Unfortunately YouTube is not built for education and edtech platforms such as Unacademy and Byjus may not be financially feasible for some.
+Our project optimises YouTube for education and gives a personalised roadmap for the student while removing any distraction that YouTube entices students with.
+
+## Technologies Used
+1. Flask
+2. SQLAlchemy
+3. Google Calendar API
+4. Youtube API
